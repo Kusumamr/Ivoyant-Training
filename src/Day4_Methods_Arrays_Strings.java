@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Day4 {
+public class Day4_Methods_Arrays_Strings {
     //void type method
     void display(){
         System.out.println("Inside a void method");
@@ -28,7 +28,7 @@ public class Day4 {
         }
 
 
-        Day4 obj=new Day4();
+        Day4_Methods_Arrays_Strings obj=new Day4_Methods_Arrays_Strings();
 
 
 
