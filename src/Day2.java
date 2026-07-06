@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Day2 {
     public static void main(String[] args) {
 
@@ -67,6 +69,47 @@ public class Day2 {
         long x=98988;
         int y=(int)x;
         System.out.println(y);
+
+        //simple km to miles ,°C to °F program
+        Scanner in=new Scanner(System.in);
+        System.out.println("1. Km to Miles");
+        System.out.println("2. Miles to Km");
+        System.out.println("3. Celsius to Fahrenheit");
+        System.out.println("4. Fahrenheit to Celsius");
+
+        int choice=in.nextInt();
+        switch (choice){
+            case 1:
+                System.out.println("Enter the kilometers");
+                double km1=in.nextDouble();
+                double m1=km1 * 0.621371;
+                System.out.println(m1);
+                break;
+
+            case 2:
+                System.out.println("Enter the miles");
+                double m2=in.nextDouble();
+                double k2=m2 * 1.60934;
+                System.out.println(k2);
+                break;
+
+            case 3:
+                System.out.println("Enter the Celsius");
+                double c1=in.nextDouble();
+                double f1=((c1 * 9 / 5) + 32);
+                System.out.println(f1);
+                break;
+
+            case 4:
+                System.out.println("Enter the Fahrenheit");
+                double f2=in.nextDouble();
+                double c2=((f2 - 32) * 5 / 9);
+                System.out.println(c2);
+                break;
+
+            default:
+                System.out.println("Invalid input ");
+        }
 
     }
 }
