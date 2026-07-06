@@ -1,0 +1,1 @@
+Withdraw amount is 1000.0Remaining balance is 1000.0
